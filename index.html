@@ -12,22 +12,27 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <style>
+      .active,
+      .btn:hover,
+      .btn:focus {
+        color: #fff !important;
+      }
+    </style>
   </head>
   <body>
-</head>
-<body>
-  <header class="bg-dark">
-    <div class="container">
-      <div class="row text-light">
-        <div class="col-10">
-          <h2>Dodo list</h2>
-        </div>
-        <div class="col">
-          <h2>Andriejus</h2>
+    <header class="bg-dark">
+      <div class="container">
+        <div class="row text-light">
+          <div class="col-10">
+            <h2>Dodo list</h2>
+          </div>
+          <div class="col">
+            <h2>Andriejus</h2>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <main class="container">
       <div class="row mt-4">
@@ -43,25 +48,35 @@
           </div>
         </div>
         <div class="col-12 col-sm-4">
-          <button type="button" class="btn btn-dark" id="addBtn">
+          <button type="button " class="btn btn-dark" id="addBtn">
             add task
           </button>
         </div>
       </div>
       <h2 class="mt-4">My tasks:</h2>
-
+      <div class="row mb-2">
+        <div class="btn-group col-4" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-info" id="sortByName">
+            Sort by name
+          </button>
+          <button type="button" class="btn btn-outline-info" id="sortByDate">
+            Sort by date
+          </button>
+        </div>
+      </div>
       <div class="row">
-        <ul class="list-group list-group-flush" id="tasksList"></ul>
+        <ul class="list-group list-group-flush container" id="tasksList"></ul>
       </div>
     </main>
 
-    <!-- JavaScript Bundle with Popper -->
+    <!--Bootstrap JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <!----main javascript-->
-    <script src="index.js"></script>
+
+    <!--Main javascript-->
+    <script src="./index.js"></script>
   </body>
 </html>
